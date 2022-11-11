@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            background-color: #303030;
+            width: 100%;
+            height: 103px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }              
+        #navBar {
+            display: flex;
+            width: 55%;
+            justify-content: space-around;
+            align-items: center;
+        } 
+        #navBar a {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+        #container button {
+            margin-right: 5%;
+            width: 80px;
+            height: 39px;
+            background: #0C70F2;
+            box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24p;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        #container2 {
+            box-sizing: border-box;
+            background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+            border: 1px solid #BABABA;
+            width: 100%;
+            height: 1938px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #container2 h1 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 80px;
+            line-height: 97px;
+            color: #FFFFFF;
+        }
+        #container2 h2 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 48px;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 0;
+        }
+        #container2 mark {
+            background-color: black;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 48px;
+            color: #FFFFFF;
+            margin-top: 0;
+        }
+        #formulario {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+            color: #FFFFFF;
+            margin-top: 191px;
+        }
+        .Form-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .Form-group input {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            width: 630px;
+            height: 56px;
+        }
+        #checkbox-itens input {
+            background: #FFFFFF;
+            border: 2px solid #CCCCCC;
+            width: 20px;
+            height: 22px;
+            box-sizing: border-box;
+        }
+        #formulario button {
+            background: rgba(12, 112, 242, 0.9);
+            box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+            border-radius: 10px;
+            width: 640px;
+            height: 56px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 39px;
+            color: #FFFFFF;
+            margin-top: 82px;
+            cursor: pointer;
+        }
+        #check {
+            margin-top: 35px;
+            margin-bottom: 34px;
+        }
+        #container3 {
+            width: 100%;
+            background: #0C70F2;
+            height: 520px;
+        }
+        #container3 nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 330px;
+        }
+        #container3 .linha1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #container3 ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #container3 h5 {
+            text-align: center;
+            font-family: 'Inter';
+            font-weight: 800;
+            font-size: 25px;
+            color: white;
+            line-height: 30px;
+            background: #303030;
+            border-radius: 10px;
+            padding: 15px 15px 15px 15px;
+        }
+        #container3 ul li {
+            text-align: center;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 30px;
+            margin: 20px 0px 20px 0px;
+        }
+        #container3 ul li a:hover{ 
+            color: gray;
+        }
+        #endereço {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            width: 30%;
+            color: #FFFFFF;
+        }
+        #container3 .linha2 {
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            
+        }
+        #container3 .linha2 a {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            padding: 5px;
+        }
+        #container3 .linha2 a:first-child {
+            border-right: 3px solid white;
+        }
+        #container3 .linha2 a:hover {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="navBar">
+            <a href="">Home</a>
+            <a href="">Ultimas Edições</a>
+            <a href="">Requisitos para Participar</a>
+        </div>
+        <button>Login</button>
+    </div>
+    <div id="container2">
+        <h1><b>BOOTCAMP DNC</b></h1>
+        <h2>Esse será um evento exclusivo para todos os alunos<br>
+            da <b>DNC</b>, que querem <mark><b>acelerar a carreira  </b></mark> com uma<br> 
+            semana intensiva de conteúdo de mercado entre<br>
+            <mark><b> BACK-END, FRONT-END & BANCO DE DADOS. </b></mark>
+        </h2>
+        <form id="formulario">
+            <div class="Form-group">
+                <label>Nome:</label>
+                <input placeholder="  Insira seu nome aqui" required name="nome" type="text">
+            </div>
+            <div class="Form-group">
+                <label>Sobrenome:</label>
+                <input placeholder="  Insira seu sobrenome aqui" required name="sobrenome" type="text">
+                
+            </div>
+            <div class="Forma-group" id="check">
+                <label>Área de Interesse:</label>
+                <div id="checkbox-itens">
+                    <input valeu="front" type="checkbox">
+                    <label>Front-End</label>
+                    <input valeu="back" type="checkbox">
+                    <label>Back-End</label>
+                    <input valeu="dados" type="checkbox">
+                    <label>Banco de Dados</label>
+                </div>
+            </div>
+            <div class="Form-group">
+                <label>E-mail:</label>
+                <input placeholder="  Insira seu e-mail aqui" required name="e-mail" type="text">
+            </div>
+            <div class="Form-group">
+                <label>Telefone:</label>
+                <input placeholder="  (99) 99999-9999" required name="nome" type="text">                
+            </div>
+            <div class="Form-group">
+                <label>Insira uma frase criativa aqui:</label>
+                <input placeholder="  Qual frase criativa você gostaria de falar? :)" required name="nome" type="text">
+            </div>
+            <button type="subimt" value="cadastro">Login</button>
+        </form>
+    </div> 
+    <div id="container3">
+        <div class="linha1">
+            <nav>
+                <h5>Escolas</h5>
+                <ul>
+                    <li>
+                        <a href="">Formação em Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em Marketing</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em Dados</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em Projetos</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em produtos</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <h5>Sobre DNC</h5>
+                <ul>
+                    <li>
+                        <a href="">História</a>
+                    </li>
+                    <li>
+                        <a href="">Missão Valores</a>
+                    </li>
+                    <li>
+                        <a href="">Trabalhe Conosco</a>
+                    </li>
+                    <li>
+                        <a href="">Conteúdo Gratuito</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="endereço">
+                <a href="">
+                    © 2022 DTC Treinamentos & Consultoria<br> 
+                    LTDA | CNPJ: 27.995.577/0001-37 | R.<br>
+                    Justino Cobra, 61 – Vila Ema | São José dos<br>
+                     Campos – SP | CEP 12243-030
+                    </a>
+            </div>
+        </div>
+        <div class="linha2">
+            <a href="">Termos de Uso</a>
+            <a href="">Política de Privacidade</a>
+        </div>
+    </div>
+</body>
+</html>

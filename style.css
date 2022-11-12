@@ -28,6 +28,9 @@ a {
     line-height: 30px;
     color: #FFFFFF;
 }
+#navBar a:hover{
+    color: gray;
+}
 #container button {
     margin-right: 5%;
     width: 80px;
@@ -41,6 +44,9 @@ a {
     line-height: 24p;
     color: #FFFFFF;
     cursor: pointer;
+}
+#container button:hover {
+    color: rgb(202, 202, 202);
 }
 #container2 {
     box-sizing: border-box;
